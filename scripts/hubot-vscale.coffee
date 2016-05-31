@@ -201,7 +201,26 @@ vscaleList = (msg) ->
       catch error
         msg.send error
 
-
+printWelcome = () ->
+  process.stdout.write("\n"+
+  "                 ..                 \n"+
+  "             .';::::;'.             \n"+
+  "         .;dkxdl::::::::,..         \n"+
+  "     .,lxOOOOOko,..,:::::::;'.      \n"+
+  "  .cxOOOOOOkl,       .';:::::::;'   \n"+
+  "  ;OOOOOxc.              .';:::::.  \n"+
+  "  ;OOOOd                    ;::::.  \n"+
+  "  ;OOOOo                    ;::::.  ====================================================\n"+
+  "  ;OOOOo                    ;::::.  ==  Vscale.io management initialized, see         ==\n"+
+  "  ;OOOOo                    ;::::.  ==  scripts/hubot-vscale.coffee for documentation ==\n"+
+  "  ;OOOOo                    ;::::.  ====================================================\n"+
+  "  ;OOOOd.                  ,:::::.  \n"+
+  "  ;OOOOOOd:.           .;okOc::::.  \n"+
+  "   ,lkOOOOOOko;.    .:xOOOOOc::,.   \n"+
+  "      .:dkOOOOOOxclkOOOOOOko'.      \n"+
+  "          'cxOOOOOOOOOOxc'          \n"+
+  "             .;lkOOkl;.             \n"+
+  "                 ..                 \n")
 
 module.exports = (robot) ->
 
@@ -211,6 +230,7 @@ module.exports = (robot) ->
 #  robot.globalHttpOptions.httpAgent  = proxy('http://127.0.0.1:8888', false)
 #  robot.globalHttpOptions.httpsAgent = proxy('http://127.0.0.1:8888', true)
 
+  printWelcome()
 
   robot.respond /vs(?:cale)? list( (.+))?/i, (msg) ->
     vscaleList(msg)
