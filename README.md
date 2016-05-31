@@ -13,6 +13,12 @@ Install dependensies
 
 Start hubot server with your adapter.
 
+Install hubot+adapters
+`npm install hubot'`
+`npm install hubot-slack`
+`npm install hubot-telegram'`
+
+
 For example 
 `TELEGRAM_TOKEN=12312312312312312 hubot --adapter telegram`
 `HUBOT_SLACK_TOKEN=12312312312312312 hubot --adapter slack`
