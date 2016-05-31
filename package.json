@@ -1,0 +1,26 @@
+{
+  "name": "hubot-vscale",
+  "description": "Interact with vscale API using your token",
+  "version": "0.0.1",
+  "author": "Nagaev Maksim <nagaev.maksim@gmail.com>",
+  "license": "MIT",
+
+  "keywords": ["hubot","hubot-scripts","vscale"],
+
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/menemy/hubot-vscale.git"
+  },
+
+  "bugs": {
+    "url": "https://github.com/menemy/hubot-vscale/issues"
+  },
+
+  "dependencies": {
+    "coffee-script": "~1.6",
+    "proxy-agent": "~2.0.0",
+    "password-generator": "~2.0.2"
+  },
+
+  "main": "index.coffee"
+}
