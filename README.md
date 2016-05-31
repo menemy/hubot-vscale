@@ -18,6 +18,9 @@ Install hubot+adapters
 `npm install hubot-slack`
 `npm install hubot-telegram`
 
+Optionally 
+`npm install hubot-help`
+
 
 For example 
 `TELEGRAM_TOKEN=12312312312312312 hubot --adapter telegram`
